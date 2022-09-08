@@ -2,7 +2,7 @@
 
 {% block content %}
 <h5>Nama: </h5>
-<b>{{'Elang Permana'}}</b>
+<b>{{nama}}</b>
 
 <table>
     <tr>
@@ -12,11 +12,11 @@
     </tr>
     {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
     {% for barang in list_barang %}
-        <tr>
-            <th>{{barang.nama_barang}}</th>
-            <th>{{barang.harga_barang}}</th>
-            <th>{{barang.deskripsi}}</th>
-        </tr>
+    <tr>
+        <th>{{barang.nama_barang}}</th>
+        <th>{{barang.harga_barang}}</th>
+        <th>{{barang.deskripsi}}</th>
+    </tr>
     {% endfor %}
 
 </table>
