@@ -5,15 +5,16 @@
 {% endblock meta %}
 
 {% block content %}
+
 <nav class="navbar navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid justify-content-star">
       <span class="navbar-brand">Wishlist: {{nama}}</span>
       <span class="d-flex">
         <button class="btn btn-outline-danger"><a href="{% url 'wishlist:logout' %}">Logout</a></button>
       </span>
     </div>
   </nav>
-
+ 
 
 <h5>Nama: </h5>
 <b>{{nama}}</b> 
